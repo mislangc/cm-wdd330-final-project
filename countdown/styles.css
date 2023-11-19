@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-image: url("/countdown/images/base-background.jpg");
+    background-size: 100%;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+#countdown-container {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.large-text {
+    font-weight: bold;
+    font-size: 4rem;
+    margin: 0 1rem;
+}
+#event-container {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+#event-container button {
+    padding: .5rem 1rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: .5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#event-container button:hover {
+    transform: scale(1.1);
+    transition: .5s;
+}
+

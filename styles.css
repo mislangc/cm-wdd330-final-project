@@ -1,0 +1,10 @@
+header {
+    background-color: orange;
+}
+main {
+    margin: 1rem;
+}
+.projects {
+    display: flex;
+    flex-direction: column;
+}

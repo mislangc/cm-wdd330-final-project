@@ -1,0 +1,41 @@
+body {
+    background-image: url("/drawing-app/images/drawing-app-background.jpg");
+}
+canvas {
+    width: 700px;
+    height: 500px;
+    border: 1px solid black;
+    display: block;
+    margin: auto;
+    background-color: white;
+}
+.toolbox {
+    display: block;
+    margin: auto;
+    background-color: blueviolet;
+    width: 500px;
+    padding: .5rem;
+    display: flex;
+    justify-content: space-around;
+}
+.toolbox button {
+    padding: .5rem .75rem;
+    margin: .5rem;
+}
+.toolbox span {
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.toolbox input {
+    margin: auto;
+}
+#recent-drawings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.mini-drawings {
+    margin: 1rem;
+    width: 20%;
+    border: 1px solid black;
+}
