@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body {
-    background-image: url("/countdown/images/base-background.jpg");
+    background-image: url("countdown/images/base-background.jpg");
     background-size: 100%;
     background-position: center center;
     display: flex;
