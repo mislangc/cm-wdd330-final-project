@@ -12,6 +12,8 @@ let minutesContainer = document.querySelector("#minutes");
 let hoursContainer = document.querySelector("#hours");
 let daysContainer = document.querySelector("#days");
 
+let backgroundImage = document.querySelector("#background-image");
+
 //Get event buttons
 let buttons = document.getElementsByTagName("button");
 let newYearButton = document.querySelector("#new-year");
@@ -22,7 +24,7 @@ let valentinesButton = document.querySelector("#valentines");
 function changeToNewYear() {
     eventName.innerHTML = "New Year's Eve"
     eventDate = "1 Jan 2024";
-    body.style.backgroundImage = `url("countdown/images/new-year-background.jpg")`;
+    backgroundImage.src = `images/new-year-background.jpg`;
     countdownContainer.style.color = "white";
     h1.style.color = "white";
     for (i = 0 ; i < buttons.length ; i++) {
@@ -34,7 +36,7 @@ function changeToNewYear() {
 function changeToChristmas() {
     eventName.innerHTML = "Christmas"
     eventDate = "25 Dec 2023";
-    body.style.backgroundImage = `url("countdown/images/christmas-background.jpg")`;
+    backgroundImage.src = `images/christmas-background.jpg`;
     countdownContainer.style.color = "black";
     h1.style.color = "black";
     for (i = 0 ; i < buttons.length ; i++) {
@@ -45,7 +47,7 @@ function changeToChristmas() {
 function changeToValentines() {
     eventName.innerHTML = "Valentine's Day"
     eventDate = "14 Feb 2024";
-    body.style.backgroundImage = `url("countdown/images/valentines-background.jpg")`;
+    backgroundImage.src = `images/valentines-background.jpg`;
     countdownContainer.style.color = "black";
     h1.style.color = "black";
     for (i = 0 ; i < buttons.length ; i++) {

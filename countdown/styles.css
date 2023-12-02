@@ -2,15 +2,18 @@
     box-sizing: border-box;
 }
 body {
-    background-image: url("countdown/images/base-background.jpg");
-    background-size: 100%;
-    background-position: center center;
+    position: relative;
     display: flex;
+    background-color: black;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
+}
+body img {
+    position: absolute;
+    z-index: -1;
+    max-width: 100%;
 }
 #countdown-container {
     display: flex;
