@@ -73,6 +73,9 @@ clearButton.addEventListener("click", () => {
 saveButton.addEventListener("click", () => {
     const img  = canvas.toDataURL('image/png');
 
+    drawings.style.border = "1px solid black";
+    drawings.style.backgroundColor = "orangered";
+
     let saveImageContainer = document.createElement("img");
     saveImageContainer.src = img;
     saveImageContainer.alt = "user-drawing";
@@ -81,7 +84,7 @@ saveButton.addEventListener("click", () => {
 
     drawings.appendChild(saveImageContainer);
 
-    let drawingList = document.getElementsByTagName("img");
+    let drawingList = drawings.getElementsByTagName("img");
     if (drawingList.length > 4) {
         drawingList[0].remove();
     }

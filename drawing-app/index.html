@@ -7,20 +7,28 @@
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
+<header>
+
+</header>
 <body>
-    <canvas id="canvas" width="700" height="500"></canvas>
-    <div class="toolbox">
-        <div>
-            <button id="decrease">-</button>
-            <span id="brush-size">30</span>
-            <button id="increase">+</button>
+    <div id="draw-section">
+        <img id="background-image" src="images/drawing-app-background.jpg" alt="background image with paintbrushes">
+        <canvas id="canvas" width="700" height="500"></canvas>
+        <div class="toolbox">
+            <div>
+                <button id="decrease">-</button>
+                <span id="brush-size">30</span>
+                <button id="increase">+</button>
+             </div>
+            <input type="color" id="color">
+            <button id="clear-canvas">Clear</button>
+            <button id="save-drawing">Save</button>
         </div>
-        <input type="color" id="color">
-        <button id="clear-canvas">Clear</button>
-        <button id="save-drawing">Save</button>
     </div>
+</body>
+<footer>
     <div id="recent-drawings">
 
     </div>
-</body>
+</footer>
 </html>
