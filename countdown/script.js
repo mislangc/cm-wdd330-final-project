@@ -75,7 +75,23 @@ function countdown() {
     minutesContainer.innerHTML = formatTime(minutes);
     hoursContainer.innerHTML = formatTime(hours);
     daysContainer.innerHTML = formatTime(days);
+
+    if (x.matches) {
+        if (eventName.innerHTML == "Christmas") {
+            backgroundImage.src = `images/christmas-background-2.jpg`
+            h1.style.color = "white";
+            countdownContainer.style.color = "white";
+        }
+    } else {
+        if (eventName.innerHTML == "Christmas") {
+            backgroundImage.src = `images/christmas-background.jpg`
+            h1.style.color = "black";
+            countdownContainer.style.color = "black";
+        }
+    }
 }
+
+let x = window.matchMedia("(max-width: 440px");
 
 function formatTime(time) {
     if (time < 10) {

@@ -19,6 +19,8 @@ body img {
     display: flex;
     text-align: center;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 .large-text {
     font-weight: bold;
@@ -41,4 +43,17 @@ body img {
     transform: scale(1.1);
     transition: .5s;
 }
-
+#background-image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    filter: brightness(110%);
+}
+@media only screen and (max-width: 440px) {
+    h1 {
+        text-align: center;
+    }
+    #countdown-container {
+        flex-wrap: wrap;
+    }
+}
