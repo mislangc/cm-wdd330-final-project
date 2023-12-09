@@ -12,7 +12,6 @@ async function getWeatherByLocation(location) {
 
     console.log(responseData);
     console.log(KelvToCels(responseData.main.temp));
-
     addWeatherToPage(responseData);
 };
 
@@ -23,6 +22,7 @@ function addWeatherToPage(data) {
     weather.classList.add("weather");
     
     weather.innerHTML = `
+    <p>${data.name}, ${data.sys.country}</p>
     <h2>
     <img src="https://api.openweathermap.org/img/w/${data.weather[0].icon}.png"/>
     ${temp}&deg;C 
@@ -32,6 +32,9 @@ function addWeatherToPage(data) {
     `;
     main.innerHTML = " ";
     main.appendChild(weather);
+
+    console.log(data.name);
+    console.log(data.sys.country);
 }
 
 function KelvToCels(kelvin) {
